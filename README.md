@@ -1,2 +1,2 @@
-# QuickQuiz
-QuickQuiz is a ai powered test review platform 
+# QwikQuiz
+QwikQuiz is a ai powered test review platform 
