@@ -1,16 +1,14 @@
-import Question from './Question';
-
 /**
  * Class representing a long answer question.
  */
-export class LAQuestion extends Question {
+export class LAQuestion {
 	/**
 	 * Create a long answer question.
 	 * @param {string} question - The question.
 	 * @param {string} answer - The answer.
 	 */
-	constructor(question, options, answer) {
-		super(question);
+	constructor(question, answer) {
+		this.question = question;
 		this.answer = answer;
 	}
 }

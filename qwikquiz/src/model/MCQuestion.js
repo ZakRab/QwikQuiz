@@ -1,9 +1,7 @@
-import Question from './Question';
-
 /**
  * Class representing a multiple choice question.
  */
-export class MCQuestion extends Question {
+export class MCQuestion {
 	/**
 	 * Create a multiple choice question.
 	 * @param {string} question - The question.
@@ -11,7 +9,7 @@ export class MCQuestion extends Question {
 	 * @param {string} answer - The answer.
 	 */
 	constructor(question, options, answer) {
-		super(question);
+		this.question = question;
 		this.options = options;
 		this.answer = answer;
 	}
