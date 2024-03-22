@@ -1,0 +1,33 @@
+{
+	"name": "qwikquiz",
+	"version": "0.0.1",
+	"private": true,
+	"scripts": {
+		"dev": "vite dev",
+		"build": "vite build",
+		"preview": "vite preview",
+		"lint": "prettier --check . && eslint .",
+		"format": "prettier --write ."
+	},
+	"devDependencies": {
+		"@sveltejs/adapter-auto": "^3.0.0",
+		"@sveltejs/kit": "^2.0.0",
+		"@sveltejs/vite-plugin-svelte": "^3.0.0",
+		"@types/eslint": "^8.56.0",
+		"eslint": "^8.56.0",
+		"eslint-config-prettier": "^9.1.0",
+		"eslint-plugin-svelte": "^2.35.1",
+		"prettier": "^3.1.1",
+		"prettier-plugin-svelte": "^3.1.2",
+		"svelte": "^4.2.12",
+		"vite": "^5.0.3"
+	},
+	"type": "module",
+	"dependencies": {
+		"bootstrap": "^5.3.3",
+		"dotenv": "^16.4.5",
+		"jspdf": "^2.5.1",
+		"openai": "^4.28.4",
+		"pdfkit": "^0.14.0"
+	}
+}
