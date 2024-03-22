@@ -1,7 +1,9 @@
 <script>
   import { onMount } from "svelte";
   import OpenAI from "openai";
-  import jsPDF from "jspdf";
+  import NavBar from "../../components/NavBar.svelte";
+  import { generatePDF } from "../../lib/generatePDF.js";
+
   let prompt =
     "economics multiple choice test about supply and demand I want three free response questions as well";
   let response = "";
@@ -30,19 +32,13 @@
 
     // Call createPdf here if you have a response
     if (response.choices && response.choices.length > 0) {
-      createPdf(response.choices[0].message.content);
+      generatePDF(response.choices[0].message.content);
     }
-  }
-
-  function createPdf(text) {
-    const doc = new jsPDF();
-    doc.setFontSize(10);
-    doc.text(text, 1, 10);
-    doc.save("test.pdf");
   }
 </script>
 
 <main>
+  <NavBar></NavBar>
   <!-- Fixed: Pass generateTest as a reference -->
   <button on:click={generateTest()}>Generate</button>
 
@@ -51,5 +47,3 @@
     <p>{@html response.choices[0].message.content}</p>
   {/if}
 </main>
-
-<a href="/">home</a>

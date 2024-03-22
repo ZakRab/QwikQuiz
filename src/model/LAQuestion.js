@@ -11,4 +11,8 @@ export class LAQuestion {
 		this.question = question;
 		this.answer = answer;
 	}
+
+	// toString() {
+	// 	return this.question + '\n'
+	// }
 }

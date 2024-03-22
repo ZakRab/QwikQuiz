@@ -13,4 +13,12 @@ export class MCQuestion {
 		this.options = options;
 		this.answer = answer;
 	}
+
+	// toString() {
+	// 	let output = this.question + " \n";
+	// 	for (let i = 0; i < this.options.length; i++) {
+	// 		output += this.options[i] + " \n";
+	// 	}
+	// 	return output;
+	// }
 }
