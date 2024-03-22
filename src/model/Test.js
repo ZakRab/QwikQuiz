@@ -20,21 +20,21 @@ export class Test {
 
 	}
 
-	// /**
-	//  * toString method for the class Test
-	//  * @returns {String} - The string representation of the test
-	//  */
-	// toString() {
-	// 	let output = `Test Name: ${this.name}\n`;
-	// 	let mcQuestionsStr = "Multiple Choice Questions: \n";
-	// 	let laQuestionsStr = "Long Answer Questions: \n";
-	// 	for (let i = 0; i < this.mcQuestions.length; i++) {
-	// 		mcQuestionsStr += this.mcQuestions[i].toString() + "\n";
-	// 	}
-	// 	for (let i = 0; i < this.laQuestions.length; i++) {
-	// 		laQuestionsStr += this.laQuestions[i].toString() + "\n";
-	// 	}
-	// 	return output + mcQuestionsStr + laQuestionsStr;
-	// }
+	/**
+	 * toString method for the class Test
+	 * @returns {String} - The string representation of the test
+	 */
+	toString() {
+		let output = `Test Name: ${this.name}\n`;
+		let mcQuestionsStr = "Multiple Choice Questions: \n";
+		let laQuestionsStr = "Long Answer Questions: \n";
+		for (let i = 0; i < this.mcQuestions.length; i++) {
+			mcQuestionsStr += this.mcQuestions[i].toString() + "\n";
+		}
+		for (let i = 0; i < this.laQuestions.length; i++) {
+			laQuestionsStr += this.laQuestions[i].toString() + "\n";
+		}
+		return output + mcQuestionsStr + laQuestionsStr;
+	}
 
 }
