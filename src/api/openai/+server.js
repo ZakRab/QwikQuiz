@@ -1,10 +1,8 @@
-import * as dotenv from "dotenv";
-
 import { OpenAI } from "openai";
-dotenv.config();
-// console.log(process.env.OPENAI_API_KEY);
+// dotenv.config();
+console.log(process.env.VITE_OPENAI_API_KEY);
 const openai = new OpenAI({
-  apiKey: "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",
+  apiKey: process.env.VITE_OPENAI_API_KEY,
 });
 
 const assistent = await openai.beta.assistants.retrieve(
