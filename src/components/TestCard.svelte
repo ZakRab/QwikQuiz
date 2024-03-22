@@ -1,7 +1,7 @@
 <script>
   import { TestStore } from "../stores";
   export let test;
-  // import { generatePDF } from "../lib/generatePDF.js";
+  import { generatePDF } from "../lib/generatePDF.js";
 
   /**
    * Deletes a test from the TestStore
@@ -17,10 +17,10 @@
 <div class="card">
   <div class="card-body">
     <div class="card-left-wrapper">
-      <!-- <button
+      <button
         on:click={generatePDF(test.toString())}
         class="btn btn-primary d-inline">D</button
-      > -->
+      >
       <h6 class="card-title d-inline">{test.name}</h6>
     </div>
 
