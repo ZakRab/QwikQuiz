@@ -1,4 +1,4 @@
-<!-- <script>
+<script>
   export let mcQuestionList;
   export let laQuestionList;
 </script>
@@ -19,4 +19,4 @@
       <h3>{laQuestion.question}</h3>
     </div>
   {/each}
-</div> -->
+</div>
