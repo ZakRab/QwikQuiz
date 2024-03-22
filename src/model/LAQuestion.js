@@ -12,7 +12,7 @@ export class LAQuestion {
 		this.answer = answer;
 	}
 
-	// toString() {
-	// 	return this.question + '\n'
-	// }
+	toString() {
+		return this.question + '\n'
+	}
 }
