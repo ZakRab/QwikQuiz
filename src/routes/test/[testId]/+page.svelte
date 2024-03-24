@@ -16,7 +16,9 @@
   console.log(test.toString());
 </script>
 
-<NavBar></NavBar>
-<h1>{test.name}</h1>
-<p>{test.dateCreated}</p>
-<QuestionList {mcQuestionList} {laQuestionList} />
+<main class="px-24 py-8 bg-slate-100">
+  <NavBar></NavBar>
+  <h1>{test.name}</h1>
+  <p>{test.dateCreated}</p>
+  <QuestionList {mcQuestionList} {laQuestionList} />
+</main>

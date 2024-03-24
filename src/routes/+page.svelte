@@ -4,24 +4,13 @@
   import NavBar from "../components/NavBar.svelte";
 </script>
 
-<main class="px-24 py-8 bg-slate-100">
+<main class="px-24 py-8 bg-slate-100 flex flex-col gap-14">
   <NavBar></NavBar>
-  <h4>Main Page</h4>
-  <div class="test-list-container">
+  <h4 class="text-xl font-bold font-sans">Recent Tests</h4>
+  <div class="flex flex-col gap-2">
+    <!-- Loop through the TestStore and display each test -->
     {#each $TestStore as test (test.id)}
       <TestCard {test}></TestCard>
     {/each}
   </div>
 </main>
-
-<style>
-  .test-list-container {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    padding: 2.5vw 5vw;
-  }
-  h4 {
-    padding: 2.5vw 5vw;
-  }
-</style>
