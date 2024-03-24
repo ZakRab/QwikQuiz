@@ -4,13 +4,15 @@
   import NavBar from "../components/NavBar.svelte";
 </script>
 
-<NavBar></NavBar>
-<h4>Main Page</h4>
-<div class="test-list-container">
-  {#each $TestStore as test (test.id)}
-    <TestCard {test}></TestCard>
-  {/each}
-</div>
+<main class="px-24 py-8 bg-slate-100">
+  <NavBar></NavBar>
+  <h4>Main Page</h4>
+  <div class="test-list-container">
+    {#each $TestStore as test (test.id)}
+      <TestCard {test}></TestCard>
+    {/each}
+  </div>
+</main>
 
 <style>
   .test-list-container {
