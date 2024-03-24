@@ -4,7 +4,9 @@
     ><img src="../../assets/QwikQuiz Logo.png" alt="" class="w-16" /></a
   >
   <!-- NAV LINKS -->
-  <a href="/generateTest" class="p-3 bg-purple-500 rounded-xl text-white"
+  <a
+    href="/generateTest"
+    class="p-3 bg-purple-500 rounded-xl text-white hover:bg-purple-600 shadow-md hover:shadow-lg"
     >Generate Test</a
   >
 </nav>
