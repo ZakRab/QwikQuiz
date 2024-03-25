@@ -21,7 +21,7 @@
   class="bg-white p-6 flex justify-between box-border items-center rounded-xl"
 >
   <!--Left Wrapper-->
-  <div class="flex gap-3 font-semibold text-lg items-center">
+  <div class="flex gap-3 font-semibold text-gray-900 text-lg items-center">
     <button on:click={generatePDF(test.toString())}
       ><img
         src="../../assets/QwikQuiz PDF Icon.png"
