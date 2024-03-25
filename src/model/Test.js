@@ -11,9 +11,10 @@ export class Test {
 	 * @param {MCQuestion[]} mcQuestions - The multiple choice questions of the test
 	 * @param {LAQuestion[]} laQuestions - The long answer questions of the test
 	 */
-	constructor(name, id, mcQuestions, laQuestions) {
+	constructor(name, id, tag, mcQuestions, laQuestions) {
 		this.name = name;
-		this.id = id
+		this.id = id;
+		this.tag = tag;
 		this.dateCreated = new Date();
 		this.mcQuestions = mcQuestions;
 		this.laQuestions = laQuestions;
@@ -25,7 +26,7 @@ export class Test {
 	 * @returns {String} - The string representation of the test
 	 */
 	toString() {
-		let output = `Test Name: ${this.name}\n`;
+		let output = `Test Name: ${this.name}\n Class: `;
 		let mcQuestionsStr = "Multiple Choice Questions: \n";
 		let laQuestionsStr = "Long Answer Questions: \n";
 		for (let i = 0; i < this.mcQuestions.length; i++) {

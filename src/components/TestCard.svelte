@@ -18,7 +18,7 @@
 
 <!-- Test Card -->
 <div
-  class="bg-white p-6 flex justify-between box-border items-center rounded-xl"
+  class="bg-white p-6 flex justify-between box-border items-center border-b-4 border-gray-300 rounded-xl"
 >
   <!--Left Wrapper-->
   <div class="flex gap-3 font-semibold text-gray-900 text-lg items-center">
@@ -29,7 +29,12 @@
         class="w-5 hover:scale-110 transition-all duration-300"
       /></button
     >
-    <h6>{test.name}</h6>
+    <div class="flex flex-col">
+      <h6>{test.name}</h6>
+      <!-- TODO: Add a class for color so that I can get a color for the class name-->
+      <!-- FIXME: Make sure the spacing gets fixed. Right now due to the new field the spacing is off. -->
+      <p class="text-xs text-gray-500 font-normal">{test.tag.name}</p>
+    </div>
   </div>
 
   <!--Right Wrapper-->

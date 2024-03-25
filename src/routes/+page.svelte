@@ -12,7 +12,7 @@
   <div class="flex flex-col gap-3">
     {#each $TestStore.slice(0, 4) as test (test.id)}
       <div
-        in:slide={{ duration: 1000, delay: 1000, easing: cubicOut }}
+        in:fade={{ duration: 500, delay: 750, easing: cubicOut }}
         out:slide={{ duration: 500, delay: 0, easing: cubicIn }}
       >
         <TestCard {test} />

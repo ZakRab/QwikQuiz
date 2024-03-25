@@ -1,4 +1,6 @@
-<nav class="flex flex-row justify-between items-center p-4 bg-white rounded-xl">
+<nav
+  class="flex flex-row justify-between items-center p-4 border-b-4 border-gray-300 bg-white rounded-xl"
+>
   <!-- LOGO -->
   <a href="/" class="h-fit hover:scale-110 transition-all duration-300"
     ><img src="../../assets/QwikQuiz Logo.png" alt="" class="w-14" /></a
