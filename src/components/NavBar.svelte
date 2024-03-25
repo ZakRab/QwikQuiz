@@ -4,7 +4,7 @@
     ><img src="../../assets/QwikQuiz Logo.png" alt="" class="w-14" /></a
   >
   <!-- NAV LINKS -->
-  <div class="flex gap-2">
+  <div class="flex gap-3">
     <a
       href="/generateTest"
       class="py-2 px-3 text-md font-semibold bg-purple-500 rounded-xl text-white border-b-4 border-purple-700 hover:bg-purple-600 hover:translate-y-0.5 hover:border-b-4 hover:border-transparent shadow-md hover:shadow-lg transition-all duration-300"
