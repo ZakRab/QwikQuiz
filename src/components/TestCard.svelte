@@ -16,6 +16,8 @@
   }
 </script>
 
+<!-- TODO: Because most of the buttons all have a 3D effect make it so that style if a tag or something so that the css isn't crazy-->
+
 <!-- Test Card -->
 <div
   class="bg-white p-6 flex justify-between box-border items-center border-b-4 border-gray-300 rounded-xl"
@@ -29,11 +31,15 @@
         class="w-5 hover:scale-110 transition-all duration-300"
       /></button
     >
-    <div class="flex flex-col">
+    <div class="flex flex-col gap-0.5">
       <h6>{test.name}</h6>
-      <!-- TODO: Add a class for color so that I can get a color for the class name-->
       <!-- FIXME: Make sure the spacing gets fixed. Right now due to the new field the spacing is off. -->
-      <p class="text-xs text-gray-500 font-normal">{test.tag.name}</p>
+      <p
+        class="text-xs text-{test.tag.color}-600 bg-{test.tag
+          .color}-100 w-fit py-1 px-2 rounded-lg font-normal"
+      >
+        {test.tag.name}
+      </p>
     </div>
   </div>
 
