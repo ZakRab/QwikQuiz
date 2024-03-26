@@ -23,7 +23,7 @@
   class="bg-white py-3 flex justify-between box-border items-center border-b-2 rounded-sm border-gray-100"
 >
   <!--Left Wrapper-->
-  <div class="flex flex-col text-lg">
+  <div class="flex flex-col text-md">
     <h6 class="mt-2 text-md">{test.name}</h6>
     <p class="text-xs text-{test.tag.color}-400 w-fit rounded-lg font-normal">
       {test.tag.name}
@@ -35,13 +35,13 @@
   <div class="flex gap-3 items-center">
     <!-- NOTE: /test/{test.id} it is basically a parameter which is populating the route test/[test.id]-->
     <a
-      class="py-2 px-3 text-md font-semibold bg-cyan-500 rounded-lg text-white hover:bg-cyan-600 shadow-md transition-all duration-300"
+      class="py-2 px-3 text-sm font-semibold bg-cyan-500 rounded-lg text-white hover:bg-cyan-600 shadow-md transition-all duration-300"
       href="/test/{test.id}"
       data-sveltekit-preload-data>View Test</a
     >
     <button
       on:click={handleDelete(test.id)}
-      class="py-2 px-3 text-md font-semibold bg-gray-300 rounded-lg text-gray-800 hover:bg-gray-400 shadow-md transition-all duration-300"
+      class="py-2 px-3 text-sm font-semibold bg-gray-300 rounded-lg text-gray-800 hover:bg-gray-400 shadow-md transition-all duration-300"
       >Delete</button
     >
   </div>
