@@ -20,7 +20,7 @@
 
 <!-- Test Card -->
 <div
-  class="bg-white p-6 flex justify-between box-border items-center border-b-4 border-gray-300 rounded-xl"
+  class="bg-white p-3 flex justify-between box-border items-center border-b-4 border-gray-300 rounded-xl"
 >
   <!--Left Wrapper-->
   <div class="flex gap-3 font-semibold text-gray-900 text-lg items-center">
@@ -31,7 +31,7 @@
         class="w-5 hover:scale-110 transition-all duration-300"
       /></button
     >
-    <div class="flex flex-col gap-0.5">
+    <div class="flex flex-col text-base gap-1">
       <h6>{test.name}</h6>
       <!-- FIXME: Make sure the spacing gets fixed. Right now due to the new field the spacing is off. -->
       <p

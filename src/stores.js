@@ -42,7 +42,7 @@ export const TestStore = writable([
 		[new LAQuestion('Explain Newton\'s laws of motion.', 'Newton\'s laws of motion are three physical laws that together laid the foundation for classical mechanics. The first law states that an object will remain at rest or in uniform motion in a straight line unless acted upon by an external force. The second law states that the rate of change of momentum of an object is directly proportional to the force applied, and the direction of the force is in the direction of the change of momentum. The third law states that for every action, there is an equal and opposite reaction.')]
 	),
 	new Test(
-		'Literature', 5, new Tag("Literature", 5, "emerald"),
+		'Literature', 5, new Tag("Literature", 5, "gray"),
 		[
 			new MCQuestion('Who wrote "Romeo and Juliet"?', ['A: William Wordsworth', 'B: William Shakespeare', 'C: John Milton', 'D: Geoffrey Chaucer'], 'B: William Shakespeare'),
 			new MCQuestion('What is the largest organ in the human body?', ['A: Liver', 'B: Brain', 'C: Skin', 'D: Heart'], 'C: Skin')
