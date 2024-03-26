@@ -8,8 +8,9 @@
 
 <main class="px-24 py-8 h-svh bg-slate-100 flex flex-col gap-14">
   <NavBar></NavBar>
-  <h4 class="text-xl font-bold font-sans">Recent Tests</h4>
-  <div class="flex flex-col gap-3">
+  <div class="flex flex-col p-4 bg-white rounded-xl">
+    <h4 class="text-xl font-bold font-sans">Recent Tests</h4>
+
     {#each $TestStore.slice(0, 4) as test (test.id)}
       <div
         in:fade={{ duration: 500, delay: 750, easing: cubicOut }}
