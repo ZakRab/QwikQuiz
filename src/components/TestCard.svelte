@@ -1,7 +1,6 @@
 <script>
   import { TestStore } from "../stores";
   export let test;
-  import { generatePDF } from "../lib/generatePDF.js";
 
   /**
    * Deletes a test from the TestStore
