@@ -1,9 +1,11 @@
 import OpenAI from "openai";
+import { OPENAI_API_KEY } from '$env/static/private';
 
 const openai = new OpenAI({
-  apiKey: "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",
-  dangerouslyAllowBrowser: true, // This is the default and can be omitted
+    apiKey: OPENAI_API_KEY,
+    dangerouslyAllowBrowser: true, // This is the default and can be omitted
 });
+
 export default async function _generateTest(userTest) {
     console.log("function hit");
     const chatCompletion = await openai.chat.completions.create({
