@@ -1,12 +1,16 @@
 <script>
-  import _generateTest from "../routes/generateTest/+page.server";
 
-  // Store the user input in the prompt variable
   let prompt = "";
 
-  function handleSubmit() {
-    console.log(prompt);
-    _generateTest(prompt);
+  async function handleSubmit() {
+    const response = await fetch('/generateTest', {
+      method: 'POST',
+      body: JSON.stringify({test: prompt}),
+    });
+
+    const data = await response.json();
+    console.log(data);
+
     prompt = "";
   }
 </script>

@@ -14,7 +14,7 @@ export const server_loads = [];
 export const dictionary = {
 		"/": [2],
 		"/allTests": [3],
-		"/generateTest": [~4],
+		"/generateTest": [4],
 		"/test/[testId]": [5]
 	};
 

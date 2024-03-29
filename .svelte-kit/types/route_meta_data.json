@@ -2,7 +2,7 @@
 	"/": [],
 	"/allTests": [],
 	"/generateTest": [
-		"src/routes/generateTest/+page.server.js"
+		"src/routes/generateTest/+server.js"
 	],
 	"/test/[testId]": []
 }
