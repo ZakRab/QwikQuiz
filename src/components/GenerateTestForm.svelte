@@ -1,4 +1,6 @@
 <script>
+  import _generateTest from "../routes/generateTest/+page.server";
+
   // Store the user input in the prompt variable
   let prompt = "";
 
@@ -7,7 +9,7 @@
    */
   function handleSubmit() {
     console.log(prompt);
-    // Resets the value of the prompt variable
+    _generateTest(prompt);
     prompt = "";
   }
 </script>

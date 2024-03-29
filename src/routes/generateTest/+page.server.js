@@ -4,7 +4,7 @@ const openai = new OpenAI({
   apiKey: "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",
   dangerouslyAllowBrowser: true, // This is the default and can be omitted
 });
-export async function _generateTest(userTest) {
+export default async function _generateTest(userTest) {
     console.log("function hit");
     const chatCompletion = await openai.chat.completions.create({
         messages: [
