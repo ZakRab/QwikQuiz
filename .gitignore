@@ -1,3 +1,2 @@
 node_modules
 .env
-# FIXME: Make sure to add .env file in git ignore
