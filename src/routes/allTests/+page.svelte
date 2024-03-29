@@ -3,6 +3,7 @@
   import TestCard from "../../components/TestCard.svelte";
   import NavBar from "../../components/NavBar.svelte";
   import { slide, fade } from "svelte/transition";
+  import { cubicIn } from "svelte/easing";
 </script>
 
 <main class="px-24 py-8 h-svh bg-slate-100 flex flex-col gap-14">
