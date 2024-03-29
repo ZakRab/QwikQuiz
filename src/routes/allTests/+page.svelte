@@ -6,11 +6,16 @@
 
 <main class="px-24 py-8 h-svh bg-slate-100 flex flex-col gap-14">
   <NavBar></NavBar>
-  <h4 class="text-xl font-bold font-sans">All Tests</h4>
-  <div class="flex flex-col gap-3">
-    <!-- Loop through the TestStore and display each test -->
+  <div class="flex flex-col px-4 py-8 bg-white rounded-xl">
+    <h4 class="text-xl font-bold font-sans">Recent Tests</h4>
+
     {#each $TestStore as test (test.id)}
-      <TestCard {test}></TestCard>
+      <div
+        in:fade={{ duration: 250, delay: 0, easing: cubicIn }}
+        out:slide={{ duration: 500, delay: 100, easing: cubicIn }}
+      >
+        <TestCard {test} />
+      </div>
     {/each}
   </div>
 </main>
