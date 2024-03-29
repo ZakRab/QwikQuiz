@@ -1,5 +1,8 @@
 {
 	"/": [],
-	"/generateTest": [],
+	"/allTests": [],
+	"/generateTest": [
+		"src/routes/generateTest/+page.server.js"
+	],
 	"/test/[testId]": []
 }

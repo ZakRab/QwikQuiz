@@ -26,13 +26,11 @@
  * ```
  */
 declare module '$env/static/private' {
-	export const OPENAI_API_KEY: string;
 	export const TERM_PROGRAM: string;
 	export const NODE: string;
 	export const INIT_CWD: string;
 	export const TERM: string;
 	export const SHELL: string;
-	export const npm_config_metrics_registry: string;
 	export const TMPDIR: string;
 	export const npm_config_global_prefix: string;
 	export const TERM_PROGRAM_VERSION: string;
@@ -51,7 +49,6 @@ declare module '$env/static/private' {
 	export const PATH: string;
 	export const npm_package_json: string;
 	export const _: string;
-	export const LaunchInstanceID: string;
 	export const npm_config_userconfig: string;
 	export const npm_config_init_module: string;
 	export const USER_ZDOTDIR: string;
@@ -62,6 +59,7 @@ declare module '$env/static/private' {
 	export const EDITOR: string;
 	export const npm_package_name: string;
 	export const LANG: string;
+	export const npm_config_npm_version: string;
 	export const VSCODE_GIT_ASKPASS_EXTRA_ARGS: string;
 	export const XPC_FLAGS: string;
 	export const npm_config_node_gyp: string;
@@ -75,11 +73,9 @@ declare module '$env/static/private' {
 	export const LOGNAME: string;
 	export const npm_lifecycle_script: string;
 	export const VSCODE_GIT_IPC_HANDLE: string;
-	export const BUN_INSTALL: string;
 	export const npm_config_user_agent: string;
 	export const VSCODE_GIT_ASKPASS_NODE: string;
 	export const GIT_ASKPASS: string;
-	export const SECURITYSESSIONID: string;
 	export const npm_node_execpath: string;
 	export const npm_config_prefix: string;
 	export const COLORTERM: string;
@@ -115,13 +111,11 @@ declare module '$env/static/public' {
  */
 declare module '$env/dynamic/private' {
 	export const env: {
-		OPENAI_API_KEY: string;
 		TERM_PROGRAM: string;
 		NODE: string;
 		INIT_CWD: string;
 		TERM: string;
 		SHELL: string;
-		npm_config_metrics_registry: string;
 		TMPDIR: string;
 		npm_config_global_prefix: string;
 		TERM_PROGRAM_VERSION: string;
@@ -140,7 +134,6 @@ declare module '$env/dynamic/private' {
 		PATH: string;
 		npm_package_json: string;
 		_: string;
-		LaunchInstanceID: string;
 		npm_config_userconfig: string;
 		npm_config_init_module: string;
 		USER_ZDOTDIR: string;
@@ -151,6 +144,7 @@ declare module '$env/dynamic/private' {
 		EDITOR: string;
 		npm_package_name: string;
 		LANG: string;
+		npm_config_npm_version: string;
 		VSCODE_GIT_ASKPASS_EXTRA_ARGS: string;
 		XPC_FLAGS: string;
 		npm_config_node_gyp: string;
@@ -164,11 +158,9 @@ declare module '$env/dynamic/private' {
 		LOGNAME: string;
 		npm_lifecycle_script: string;
 		VSCODE_GIT_IPC_HANDLE: string;
-		BUN_INSTALL: string;
 		npm_config_user_agent: string;
 		VSCODE_GIT_ASKPASS_NODE: string;
 		GIT_ASKPASS: string;
-		SECURITYSESSIONID: string;
 		npm_node_execpath: string;
 		npm_config_prefix: string;
 		COLORTERM: string;
