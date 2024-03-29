@@ -1,47 +1,26 @@
 import OpenAI from "openai";
-import { OPENAI_API_KEY } from '$env/static/private';
 
 const openai = new OpenAI({
-    apiKey: OPENAI_API_KEY,
+  apiKey: "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",
+  dangerouslyAllowBrowser: true, // This is the default and can be omitted
 });
-
-// const assistantId = "asst_hcIGdvaK5eofnlgFpK1X0VvM";
-
-// // Retrieve an assistant
-// const assistant = await openai.beta.assistants.retrieve("asst_hcIGdvaK5eofnlgFpK1X0VvM")
-
-// // Create a thread
-// const threads = await openai.beta.threads.create();
-
-// // Create a message
-// const message = await openai.beta.threads.messages.create(
-//     threads.id, {
-//     role: "user",
-//     content: "What is the capital of the United States?",
-// });
-
-// // Run assitant 
-// const run = await openai.beta.threads.runs.create(threads.id, {
-//     assistant_id: assistant.id,
-//     instructions: "Address the user as Leon"
-// })
-
-// const run = await openai.beta.threads.runs.retrieve("thread_eg8tWuXHgluTMMYiudeNxhOO", "run_tKRAu1c2yOkv4oyFmoegz9oI")
-// console.log(run);
-
-// const messages = await openai.beta.threads.messages.list(
-//     "thread_eg8tWuXHgluTMMYiudeNxhOO"
-// );
-
-// messages.body.data.forEach(message => {
-//     console.log(message.content);
-// })
-
-const logs = await openai.beta.threads.runs.steps.list(
-    "thread_eg8tWuXHgluTMMYiudeNxhOO",
-    "run_tKRAu1c2yOkv4oyFmoegz9oI"
-);
-
-logs.body.data.forEach(log => {
-    console.log(log.step_details);
-});
+export async function _generateTest(userTest) {
+    console.log("function hit");
+    const chatCompletion = await openai.chat.completions.create({
+        messages: [
+            {
+                role: "system",
+                content: "You are a helpful test making assistant,"
+                + "that given a test you remix it and output JSON with the following format for each multiple choice question in the test"
+                + " {\"question\": \"What is 5 + 5?\", \"options\": [\"10\", \"15\", \"20\"], \"answer\": \"10\"}. "
+                + "And the following format for each short answer question in the test:"
+                + "{\"question\": \"explain the concept of supply and demand\", \"answer\": \"Supply and demand is an economic model that explains how the availability of a product (supply) and the desire for it (demand) determine its price.\"}, for each multiple choice question in the test."
+              },
+              { role: "user", content: userTest },
+        ],
+        model: "gpt-3.5-turbo",
+        response_format: { type: "json_object" },
+        max_tokens:1000,
+    });
+    return chatCompletion;
+}
