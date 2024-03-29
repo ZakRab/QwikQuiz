@@ -1,5 +1,5 @@
 <script>
-  import GenerateTestForm from "../../components/GenerateTestForm.svelte";
+import GenerateTestForm from "../../components/GenerateTestForm.svelte";
 </script>
 
 <GenerateTestForm></GenerateTestForm>
