@@ -76,7 +76,7 @@
     fill: none;
     stroke-dasharray: 1000;
     stroke-dashoffset: 1000;
-    animation: drawBlue 5s cubic-bezier(0.42, 0, 0.58, 1) forwards;
+    animation: drawBlue 5s  forwards;
   }
 
   svg path:nth-of-type(2) {
@@ -84,7 +84,7 @@
     transition: fill 0.3s ease;
     stroke-dasharray: 1000;
     stroke-dashoffset: 1000;
-    animation: drawPurple 5s cubic-bezier(0.42, 0, 0.58, 1) forwards;
+    animation: drawPurple 5s forwards;
   }
 
   a svg:hover {
