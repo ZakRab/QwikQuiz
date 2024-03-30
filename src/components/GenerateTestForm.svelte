@@ -20,8 +20,8 @@
     let parsedData = parseData(data);
 
     prompt = ""; // Reset prompt
-    testName = ""; // Reset prompt
     handleData(parsedData);
+    testName = ""; // Reset prompt
   }
 
   function parseData(data) {
