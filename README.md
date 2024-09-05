@@ -1,3 +1,8 @@
+#QwikQuiz
+
+An AI-powered test review platform that allows users to submit course curriculum and creates printable pdfs for students to review.<img width="1439" alt="Screenshot 2024-09-05 at 13 04 59" src="https://github.com/user-attachments/assets/a5eaa16b-6431-4617-8e7f-dc80da79e7ec">
+<img width="1298" alt="Screenshot 2024-09-05 at 13 06 08" src="https://github.com/user-attachments/assets/4dabe2c5-103f-43fe-b406-1b74338412fb">
+
 # create-svelte
 
 Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/main/packages/create-svelte).
